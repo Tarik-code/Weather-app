@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <img src="./mainLogo.svg" alt="" />
+      <h4 id="error"></h4>
+      <iframe name="noReload" style="display: none"></iframe>
+      <form action="#" id="form" target="noReload">
+        <input class="search" type="text" name="" id="searchInput" />
+        <button class="search" id="searchBtn">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </form>
+    </header>
+    <section class="weatherStats">
+      <div class="basicInfo">
+        <div class="glassEffect">
+          <div class="dateNplace">
+            <h1 class="data-day"></h1>
+            <h3 class="data-date"></h3>
+            <h3>
+              <span class="material-symbols-outlined"> home_pin </span>
+              <span class="data-city"></span>,
+              <span class="data-country"></span>
+            </h3>
+          </div>
+          <div class="tempStat">
+            <img id="weatherImg" src="" />
+            <h2>
+              <span class="data-temp"></span>
+            </h2>
+            <h3>
+              <span class="data-wordTemp"></span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="moreInfo">
+        <div class="weeklyForecastTitle">
+          <h2>More Details</h2>
+        </div>
+        <section class="weatherSkys">
+          <div class="precipitation">
+            <h4>TEMP HIGH</h4>
+            <p class="tempHigh"></p>
+          </div>
+          <div class="precipitation">
+            <h4>TEMP LOW</h4>
+            <p class="tempLow"></p>
+          </div>
+          <div class="humidity">
+            <h4>HUMIDITY</h4>
+            <p class="humidityData"></p>
+          </div>
+          <div class="wind">
+            <h4>WIND</h4>
+            <div class="windDetails">
+              <p class="windData"></p>
+              <span id="windDirections" class="material-symbols-outlined">
+                south
+              </span>
+            </div>
+          </div>
+          <div class="upcomingDays"></div>
+        </section>
+        <div class="weeklyForecastTitle">
+          <h2>Weekly Forecast</h2>
+        </div>
+        <section class="weeklyWeather">
+          <div class="day">
+            <img id="dayOneImg" src="" />
+            <p id="dayOne"></p>
+            <p id="dayOneTemp"></p>
+          </div>
+          <div class="day">
+            <img id="dayTwoImg" src="" />
+            <p id="dayTwo"></p>
+            <p id="dayTwoTemp"></p>
+          </div>
+          <div class="day">
+            <img id="dayThreeImg" src="" />
+            <p id="dayThree"></p>
+            <p id="dayThreeTemp"></p>
+          </div>
+          <div class="day">
+            <img id="dayFourImg" src="" />
+            <p id="dayFour"></p>
+            <p id="dayFourTemp"></p>
+          </div>
+        </section>
+        <div class="weeklyForecastTitle">
+          <h4>Units</h4>
+        </div>
+        <section class="tempBtns">
+          <button class="tempF">°F, mp/h</button>
+          <button class="tempC">°C, km/h</button>
+        </section>
+      </div>
+    </section>
+    <script src="bundle.js"></script>
+  </body>
+</html>
